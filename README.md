@@ -23,3 +23,11 @@ yarn start:dev
 # Production
 yarn start
 ```
+
+## Socket.io
+
+For test try to connect to
+
+```bash
+http://localhost:<port>
+```
