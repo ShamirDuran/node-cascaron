@@ -5,5 +5,5 @@
  * @returns Starting point of the query
  */
 const getOffset = (currentPage = 1, listPerPage) => {
-    return (currentPage - 1) * [listPerPage];
+  return (currentPage - 1) * [listPerPage];
 };
