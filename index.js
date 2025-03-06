@@ -14,6 +14,7 @@ app.use(morgan("dev"));
 // Routes
 app.get(`/${prefix}`, (req, res) => res.json({ message: "ok" }));
 app.use(`/${prefix}/test`, require("./src/routes/test.route"));
+app.use(`/${prefix}/aep`, require("./src/routes/aep.route"));
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);

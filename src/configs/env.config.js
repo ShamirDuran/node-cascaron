@@ -1,13 +1,11 @@
-const dotenv = require('dotenv');
+const dotenv = require("dotenv");
 dotenv.config();
 
 module.exports = {
   port: process.env.PORT || 3000,
-  prefix: process.env.PREFIX || 'api',
-  environment: process.env.ENVIRONMENT || 'development',
-  jwtName: process.env.JWT_NAME || 'Authorization',
-  jwtSecret: process.env.JWT_SECRET || 'secret',
-  jwtExpiresIn: process.env.JWT_EXPIRES_IN || '1d',
+  prefix: process.env.PREFIX || "api",
+  user: process.env.USER,
+  password: process.env.PASSWORD,
   // db: {
   //     host: process.env.DB_HOST,
   //     user: process.env.DB_USER,
